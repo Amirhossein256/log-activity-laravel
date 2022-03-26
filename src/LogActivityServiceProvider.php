@@ -1,9 +1,10 @@
 <?php
+namespace Amirhossein256\LogActivity;
 
 
 use Illuminate\Support\ServiceProvider;
 
-class LogActivitiServiceProvider extends ServiceProvider
+class LogActivityServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -12,7 +13,7 @@ class LogActivitiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->loadMigrationsFrom(__DIR__.'/database');
     }
 
     /**
