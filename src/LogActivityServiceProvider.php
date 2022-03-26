@@ -13,7 +13,8 @@ class LogActivityServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadMigrationsFrom(__DIR__.'/database');
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 
     /**
@@ -23,6 +24,8 @@ class LogActivityServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->bind('logactivity',function(){
+            return new LogActivity();
+        });
     }
 }
