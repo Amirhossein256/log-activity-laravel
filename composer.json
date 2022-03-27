@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amirhossein\\LogActivity\\": "src/"
+            "Amirhossein256\\LogActivity\\": "src/"
         }
     },
     "authors": [
