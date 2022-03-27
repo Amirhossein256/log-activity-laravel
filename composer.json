@@ -1,11 +1,11 @@
 {
-    "name": "amirhossein/log-activiti",
-    "description": "this is simple logActiviti package for use in laravel",
+    "name": "amirhossein/log-activity",
+    "description": "this is simple logActivity package for use in laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amirhossein\\LogActiviti\\": "src/"
+            "Amirhossein\\LogActivity\\": "src/"
         }
     },
     "authors": [

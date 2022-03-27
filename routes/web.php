@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Amirhossein256\LogActivity\Models\Log;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/report', function () {
-//    return 'this is route !';
-    return view('report::log');
+    $data = Log::paginate(10);
+    return view('report::log', compact('data'));
 
 });
 
